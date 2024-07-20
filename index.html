@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>Document</title>
+</head>
+
+<body class="container-fluid bg-info-subtle p-0">
+    <!--El que tiene l padding es el Body-->
+    <header id="Inicio" class="container-fluid text-center bg-white mx-0 p-0">
+
+        <!--INICIO NAV BAR  -->
+        <div class="container" data-bs-theme="dark">
+            <nav class="navbar navbar-expand-md fixed-top bg-body-tertiary px-2 ">
+                <div class="container-md" id="botones">
+                    <!-- <div class="container-fluid" id="botones"> ESTA ERA LA LINEA ORIGINAL LA CAMbien para qeu no llegue al final-->
+                    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                    <!-- <div class="container-md container-lg-fluid"> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- </div> -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#quienesSomos">Quienes Somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#productos">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="paginashtml/galeria.html">Galeria</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">Detalle (MODAL)</a>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#formulario">Formulario</a>
+                            </li>
+                            <!-- <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            </li> -->
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
+                </div>
+            </nav>
+
+
+
+        </div>
+        <!-- FIN NAV BAR -->
+
+        <!-- INICIO LOGO -->
+        <div class="margenNavbar">
+            <h1 class="d-none">PhoneStation</h1>
+            <img class="w-30 d-block d-md-none d-lg-none mx-auto" src="imagenes/imagenCel/images.png" alt="Logo">
+            <img class="w-50 d-none d-md-block d-lg-none mx-auto " src="imagenes/imagenCel/images.png" alt="Logo">
+            <img class="w-75 d-none d-md-none d-lg-block d-xl-none mx-auto " src="imagenes/imagenCel/images.png"
+                alt="Logo">
+            <img class="img-fluid d-none d-md-none d-lg-none d-xl-block mx-auto " src="imagenes/imagenCel/images.png"
+                alt="Logo">
+        </div>
+        <!-- FIN LOGO -->
+
+        <!-- INICIO CAROUSEL -->
+        <div class="container px-0 mb-5 bg-white ">
+            <!--SUGERENCIA DEL PROFE, SIEMPRE PONER ACA-->
+
+            <div id="miCarrusel" class="carousel slide carousel-fade">
+                <!-- INICIO INDICADORES -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <!--FIN INDICADORES  -->.
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+
+                        <div class="carousel-banner im-slide1" title="Todos los Colores">
+                            <div class=" d-none d-lg-block text-warning">
+                                Todos los colores para que elijas el que mas te gusta
+                            </div>
+                            <div class="text-danger">
+                                Los mejores descuentos en el mes de la "Dulzura"
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" title="Regalo semana de la dulzura">
+                        <div class="carousel-banner im-slide2 " title="Mes de la dulzura">
+                            <!-- Esto tiene la imagen de fondo -->
+                            <div>
+                                En la semana de la dulzura regala un telefono
+                            </div>
+                            <div>
+                                <img src="imagenes/banners/beso250.png" alt="Beso">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-banner im-slide3" id="exclusivo" title="Todas las marcas">
+                            <div>
+                                <p class="fs-3 text-white text-center">Todas las marcas a los mejores precios</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- INICIO BOTONES -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#miCarrusel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#miCarrusel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                <!-- FIN BOTONES -->
+            </div>
+
+
+        </div>
+
+        <!-- FIN CAROUSEL -->
+
+    </header>
+
+    <main>
+        <!-- INICIO Quienes somos Tradicional-->
+
+        <div class="container-md bg-white border border-dark border-top-0" id="quienesSomos">
+            <h2 class="text-center mb-3">Quienes somos</h2>
+            <div class="row" id="quienesSomos1">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="text-sm-start text-md-center text-lg-start">Sobre nosotros</h3>
+                    <p>Somos PhoneStation, una empresa líder en la distribución y venta de teléfonos celulares de última
+                        generación. Nuestro compromiso es proporcionar a nuestros clientes una amplia variedad de
+                        dispositivos móviles que se adapten a sus necesidades y estilos de vida. Desde smartphones de
+                        alta gama hasta modelos más accesibles, en PhoneStation garantizamos productos de calidad y un
+                        servicio al cliente excepcional.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="text-sm-end text-md-center text-lg-start">Historia</h3>
+                    <p>PhoneStation fue fundada en 2005 con el objetivo de revolucionar la forma en
+                        que las personas
+                        acceden a la tecnología móvil. Comenzamos como una pequeña tienda en el centro de la ciudad y,
+                        gracias a la confianza de nuestros clientes y al arduo trabajo de nuestro equipo, hemos crecido
+                        hasta convertirnos en una red de tiendas con presencia en todo el país. A lo largo de los años,
+                        hemos ampliado nuestra oferta para incluir no solo teléfonos celulares, sino también accesorios
+                        y servicios de soporte técnico.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="text-sm-start text-md-center text-lg-start">Filosofia</h3>
+                    <p>En PhoneStation, creemos que la tecnología debe estar al alcance de todos y
+                        facilitar la vida diaria de las personas. Nuestra filosofía se basa en la innovación continua,
+                        la calidad y la satisfacción del cliente. Nos esforzamos por estar a la vanguardia de las
+                        últimas tendencias y desarrollos tecnológicos para ofrecer productos que superen las
+                        expectativas de nuestros usuarios. La transparencia y la integridad son pilares fundamentales de
+                        nuestra empresa.</p>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h3 class="text-sm-end text-md-center text-lg-start">Objetivos y valores</h3>
+                    <p>Nuestros principales objetivos son seguir creciendo de manera sostenible, ampliar nuestra base de
+                        clientes y mantenernos como líderes en el mercado de la telefonía móvil. Nos comprometemos a
+                        ofrecer productos de alta calidad, servicios excepcionales y a crear relaciones duraderas con
+                        nuestros clientes. Nuestros valores incluyen la honestidad, el respeto, la responsabilidad
+                        social y la excelencia en todo lo que hacemos. En PhoneStation, nos enorgullecemos de contribuir
+                        positivamente a la comunidad y de fomentar un entorno de trabajo inclusivo y colaborativo.</p>
+                </div>
+            </div>
+
+            <!-- INICIO Acordeon aca adentro -->
+            <div id="quienesSomos2">
+                <div class="accordion">  <!-- id="quienesSomos2" saque esto de ahi adentro -->
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#colapsoUno" aria-expanded="false" aria-controls="colapsoUno">
+                                Sobre Nosotros
+                            </button>
+                        </h3>
+                        <div id="colapsoUno" class="accordion-collapse collapse" data-bs-parent="#quienesSomos2">
+                            <div class="accordion-body">
+                                Somos PhoneStation, una empresa líder en la distribución y venta de teléfonos celulares
+                                de última
+                                generación. Nuestro compromiso es proporcionar a nuestros clientes una amplia variedad
+                                de
+                                dispositivos móviles que se adapten a sus necesidades y estilos de vida. Desde
+                                smartphones de
+                                alta gama hasta modelos más accesibles, en PhoneStation garantizamos productos de
+                                calidad y un
+                                servicio al cliente excepcional.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#colapsoHistoria" aria-expanded="false" aria-controls="colapsoHistoria">
+                                Historia
+                            </button>
+                        </h3>
+                        <div id="colapsoHistoria" class="accordion-collapse collapse" data-bs-parent="#quienesSomos2">
+                            <div class="accordion-body">
+                                PhoneStation fue fundada en 2005 con el objetivo de revolucionar la forma en
+                                que las personas
+                                acceden a la tecnología móvil. Comenzamos como una pequeña tienda en el centro de la
+                                ciudad y,
+                                gracias a la confianza de nuestros clientes y al arduo trabajo de nuestro equipo, hemos
+                                crecido
+                                hasta convertirnos en una red de tiendas con presencia en todo el país. A lo largo de
+                                los años,
+                                hemos ampliado nuestra oferta para incluir no solo teléfonos celulares, sino también
+                                accesorios
+                                y servicios de soporte técnico.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#colapsoFilosofia" aria-expanded="false"
+                                aria-controls="colapsoFilosofia">
+                                Filosofia
+                            </button>
+                        </h3>
+                        <div id="colapsoFilosofia" class="accordion-collapse collapse" data-bs-parent="#quienesSomos2">
+                            <div class="accordion-body">
+                                En PhoneStation, creemos que la tecnología debe estar al alcance de todos y
+                                facilitar la vida diaria de las personas. Nuestra filosofía se basa en la innovación
+                                continua,
+                                la calidad y la satisfacción del cliente. Nos esforzamos por estar a la vanguardia de
+                                las
+                                últimas tendencias y desarrollos tecnológicos para ofrecer productos que superen las
+                                expectativas de nuestros usuarios. La transparencia y la integridad son pilares
+                                fundamentales de
+                                nuestra empresa.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#colapsoObjetivosYValores" aria-expanded="false"
+                                aria-controls="colapsoObjetivosYValores">
+                                Objetivos y valores
+                            </button>
+                        </h3>
+                        <div id="colapsoObjetivosYValores" class="accordion-collapse collapse"
+                            data-bs-parent="#quienesSomos2">
+                            <div class="accordion-body">
+                                Nuestros principales objetivos son seguir creciendo de manera sostenible, ampliar
+                                nuestra base de
+                                clientes y mantenernos como líderes en el mercado de la telefonía móvil. Nos
+                                comprometemos a
+                                ofrecer productos de alta calidad, servicios excepcionales y a crear relaciones
+                                duraderas con
+                                nuestros clientes. Nuestros valores incluyen la honestidad, el respeto, la
+                                responsabilidad
+                                social y la excelencia en todo lo que hacemos. En PhoneStation, nos enorgullecemos de
+                                contribuir
+                                positivamente a la comunidad y de fomentar un entorno de trabajo inclusivo y
+                                colaborativo.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--FIN  -->
+        </div>
+        <!-- FIN Quienes somos -->
+
+        <!-- INICIO Productos -->
+        <div class="container-md mb-5" id="productos">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="px-2">Tienda de Celulares</h2>
+                </div>
+
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>Samsung A24</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/SamsungA24.webp"
+                            alt="Samgung A-24">
+                        <div>
+                            <div class="row">
+
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 128GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 50 + 5 + 2 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,5"+ FHD </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 351
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <!-- <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a> -->
+                                <!--VER PORQUE NO ME TOMA MIS COLORES???????????-->
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">🛒Comprar</a>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>Motorola G14</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/MotorolaMotoG14.webp"
+                            alt="Motoroloa MOTO G14">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 128GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 50 + 2 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,5"+ FHD </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 260
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>Xiaomi Note 13</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/XiaomiRedmiNote13.webp"
+                            alt="Xiaomi Note 13">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 2.8</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 256GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 108 + 8 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,67"+ FHD </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 500
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 500
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>Motorola G84</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/MotorolaMotoG84.webp"
+                            alt="Motorola G84">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 2.2</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 256GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 50 + 8 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,55"+ FHD </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 430
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 430
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>Samsung A54</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/SamsungGalaxyA54.webp"
+                            alt="Samgung Galaxy A-54">
+                        <div>
+                            <div class="row">
+
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 2.4</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 128GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 50 + 12 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,4"+ FHD </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 600
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 600
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--VER PORQUE NO ME TOMA MIS COLORES???????????-->
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>Xiaomi Redmi 12C</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/XiaomiRedmi12C.webp"
+                            alt="Xiaomi Redmi 12C">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 2.0</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 128GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 50 + 8 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,5"+ FHD </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 240
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 240
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>ZTE Blade A53 Plus</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/ZTEBlaceA53.webp"
+                            alt="ZTE Blade A53 Plus">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 1.6</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 64GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 13 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,52"+ FHD </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 140
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 140
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3 class="">Samsung A04</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/SamsungGalaxyA042.webp"
+                            alt="Motorola G84">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 2.3</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 128GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 50 + 2 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,5"+ FHD </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 215
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 215
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button"> 🛒Comprar</a>
+                                <!--
+                                <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>ZTE Blade A33 Plus</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/ZTEBladeA33.webp"
+                            alt="Samgung Galaxy A-54">
+                        <div>
+                            <div class="row">
+
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 1.6</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 32GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 5 + 8 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,3"+ FHD </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 108
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 108
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--VER PORQUE NO ME TOMA MIS COLORES???????????-->
+                                <!--
+                            <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                            -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>Motorola E13</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/MotorolaMotoE13.webp"
+                            alt="Motorola Moto E13">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 2.3</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 64GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 5 + 13 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,52"+ FHD </div>
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!--  <h4 class="fw-bold">
+                                    USD 140
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 140
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--
+                            <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                            -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>TCL 40 NXT Paper </h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/TCL40NXT.webp"
+                            alt="TCL 40 NXT Paper">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> OCTA-CORE 2.0</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 256GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 50 + 5 + 2 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,78"+ FHD </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 140
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 360
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button">🛒Comprar</a>
+                                <!--
+                            <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                            -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 border border-1 border-dark text-center bg-colorNuevo">
+                    <div class="tiendaCelular">
+                        <h3>IPHONE 13</h3>
+                        <img class="img-fluid d-block mx-auto" src="imagenes/imagenCel/Iphone13.webp" alt="IPHONE 13">
+                        <div>
+                            <div class="row">
+                                <ul>
+                                    <li class="d-flex ">
+                                        <div class="col-6 text-end"> Procesador: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> A15 Bionic</div>
+                                    </li>
+
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Almacenamiento: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 128GB</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> CAMARA: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 12 + 12 Mpx</div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="col-6 text-end"> Pantalla: </div>
+                                        <div class="col-6 px-1 text-start fw-bold"> 6,1"+ FHD </div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="">
+                                <!--PRECIO-->
+                                <!-- <h4 class="fw-bold">
+                                    USD 1600
+                                </h4> -->
+                                <p class="fs-4 fw-bold m-1">
+                                    USD 1600
+                                </p>
+                            </div>
+                            <div class="pb-3">
+                                <!--Esto me pone el padding para que el boton en formato celular se me pegue a la caja. Ver porque se pega-->
+                                <a href="#Inicio" class="btn btn-ac d-block mx-auto col-12 fw-bold btn-outline-dark"
+                                    role="button"> 🛒 Comprar</a>
+                                <!--
+                            <button type="button" class="btn btn-info d-block mx-auto col-12 fw-bold btn-outline-dark">Comprar</button>
+                            -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- FIN Productos -->
+
+
+
+
+
+        <!-- MODAL -->
+
+        <!-- Button trigger modal -->
+
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button> -->
+
+        <!--INICIO Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <!--ACA VA TODA LA INFO  -->
+
+
+
+
+
+
+                    <div class="modal-header">
+                        <h4 class="modal-title fs-4" id="exampleModalLabel">Detalle de producto</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="d-flex flex-column flex-lg-row gap-3">
+                            <img src="imagenes/imagenCel/MotorolaMotoE13.webp" alt="">
+                            <div class="justify-content-between">
+                                <h5 class="card-title"> Celular</h5>
+                                <p>El mejor celuar que hay</p>
+                                <!-- <h5 class="card-title"> Formas de pago</h5> -->
+
+                            </div>
+                            <div>
+                                <h5 class="card-title"> Celular</h5>
+                                <p>El mejor celuar que hay</p>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Volver</button>
+                        <button type="button" class="btn btn-primary">Comprar</button>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN MODAL -->
+
+
+
+
+        <!-- INICIO Formulario -->
+        <div class="container bg-danger text-white" id="formulario">
+            <div class="row justify-content-center bg-salmon">
+                <div class="col-12 text-center">
+                    <h2>¿Quiere que lo contactemos?</h2>
+                </div>
+                <div class="col-12 col-lg8 gb-peach p-3">
+                    <form action="#" method="post" class="row">
+
+                        <div class="col-12 col-md-6 mb-2">
+                            <label for="nombre" class="form-label">Ingrese nombre:</label>
+                            <input type="text" id="nombre" name="nombre" class="form-control"
+                                aria-describedby="d_nombre">
+                            <p id="d_nombre" class="form-text">
+                                <strong>"Nombre"</strong> con mayuscula, sin caracter númerico.
+                            </p>
+
+                        </div>
+
+                        <div class="col-12 col-md-6 mb-2">
+                            <label for="apellido" class="form-label">Ingrese apellido:</label>
+                            <input type="text" id="apellido" name="apellido" class="form-control"
+                                aria-describedby="d_apellido">
+                            <p id="d_apellido" class="form-text">
+                                <strong>"Apellido"</strong> con mayuscula, sin caracter númerico.
+                            </p>
+
+                        </div>
+
+                        <div class="col-12 col-md-8 mb-2">
+                            <label for="email" class="form-label">EMAIL:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="email@xxx.com" aria-describedby="d_email">
+                            <p id="d_email" class="form-text">
+                                <strong>"email"</strong> coorporativo, no particular.
+                            </p>
+
+                        </div>
+
+                        <div class="col-12 col-md-4 mb-2">
+                            <label for="telefono" class="form-label">Telefono: </label>
+                            <input type="number" id="telefono" name="telefono" class="form-control"
+                                placeholder="011XXXXXXXX" aria-describedby="d_telefono">
+                            <p id="d_telefono" class="form-text">
+                                <strong>"Telefono"</strong> sin "15" y sin guion.
+                            </p>
+
+                        </div>
+
+
+
+
+                        <div class="col-12 col-md-6 mb-5">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Nacionalidad</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Extranjero">Extrajero</option>
+                                <option value="Otra">Otra</option>
+                            </select>
+                        </div>
+
+
+
+                        <div class="col-12 mb-3">
+                            <!-- Hice algo similar -->
+                            <div class="input-group" id="cambio2">
+                                <span class="input-group-text">Comentarios</span>
+                                <textarea class="form-control" id="comentarios2" name="comentarios2"
+                                    aria-label="With textarea" placeholder="Deje su comentario" rows="6"></textarea>
+                            </div>
+
+
+
+                            <div id="cambio1">
+                                <!-- class="input-group-none" -->
+                                <label for="comentarios1" class="form-label">Comentarios</label>
+                                <textarea class="form-control" id="comentarios1" name="comentarios1"
+                                    aria-label="With textarea" placeholder="Deje su comentario" rows="6"></textarea>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-12 m-2">
+                            <div class="row">
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="recibirInfo">
+                                        <label class="form-check-label" for="recibirInfo">
+                                            ¿Le interesa recibir nuestra newsletter?
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-lg-6">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" value="" id="recibirPromos">
+                                        <label class="form-check-label" for="recibirPromos">
+                                            ¿Le interesa recibir nuestras promociones?
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <!--INICIO BOTON-->
+                        <div class="col-12 d-flex justify-content-end mb-2">
+                            <input class="btn btn-salmon btn-size text-white" type="submit" value="Submit">
+                        </div>
+                        <!--FIN BOTON-->
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- FIN Formulario -->
+
+    </main>
+
+    <footer class="container-fluid mt-5 bg-secondary bg-gradient">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-3 col-sm-6 d-none d-sm-flex">
+                    <!--Ver como funciono esto exactamente-->
+                    <img class="w-50 mx-auto rounded-circle" src="imagenes/fotopersonal/foto.jpg" alt="Alex Cruz">
+                </div>
+                <div class="col-3 col-sm-6 d-block d-sm-none">
+                    <!--Si aca se pone Flex al ser una imagen fluida se deforma-->
+                    <img class="img-fluid mx-auto rounded-circle" src="imagenes/fotopersonal/foto.jpg" alt="Alex Cruz2">
+                </div>
+
+                <div class="col-9 col-sm-6 text-white my-auto d-md-block d-lg-none">
+                    <ul class="list-group-disabled">
+                        <li class="list-group-item disabled fs-5">Alex Cruz</li>
+                        <li class="list-group-item disabled fs-5">01/11/1984</li>
+                        <li class="list-group-item disabled fs-5">alex.cruz@davinci.edu.ar</li>
+                    </ul>
+                </div>
+                <div class="col-9 col-sm-6 text-white my-auto d-none d-md-none d-lg-block">
+                    <ul class="list-group-disabled">
+                        <li class="list-group-item disabled fs-2">Alex Cruz</li>
+                        <li class="list-group-item disabled fs-2">alex.cruz@davinci.edu.ar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

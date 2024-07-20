@@ -1,0 +1,573 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+img {
+    display: none;
+}
+
+/*
+iframe {
+    display: none;
+}
+*/
+
+body{
+    max-width: 1300px;/*Ver si qeuda aca o se va*/
+    background-color: rgb(44, 104, 161);
+    /*background-image: url('../imagenes/bg/background.jpg33');*/
+    background-image: url('../imagenes/bg/logo.png');
+    /*background-size:cover;*/
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size: contain;
+    /*background-position: center;*/
+    background-attachment:fixed;
+    color: whitesmoke;/*Cambiar color*/
+    padding-top: 60px;/*Ver si esto es suficiente*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*Cambiar letra*/
+    
+}
+
+main{
+    max-width: 1200px;
+    margin:auto;
+    background-color: rgba(89, 202, 247, 0.85);
+    
+}
+
+.header-bg{
+    background-color: #25a106;
+    position: fixed;/**Esto deja fijo y lo tira a la derecha*/
+    width: 100%;/*Esta linea lo vuelve a poner para que ocupe el 100% del ancho, debe ir si o si*/
+    top:0;
+    right: 0;
+    border-bottom: thin solid yellow;
+    /*overflow: auto;*/
+}
+
+
+/*
+header, footer, main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+*/
+/*Lo anterior lo puso el profe en el video*/
+
+
+
+header {
+    height: 90px;
+    display: flex;/*La propiedad de display flex, ayuda a 
+    colocar las cajas como si fueran celdas de tablas, 
+    con un comportamiento predecible y adaptable. 
+    Mozilla a estas cajas flexibles las llama el Diseño 
+    del Santo Grial, flex soluciona problemas de control 
+    del diseño y se adpata facilmente a los diferentes 
+    dispositivos.*/
+    justify-content: center;
+    align-items: center;
+    /*margin:auto;*/ /*Aca se ver que hace, tmb lo puse mas arriba*/
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+    text-shadow: 2px 2px 3px rgb(219, 53, 53);
+}
+
+h1{
+    font-size: 30px;/*Reduje la letra para que entre todo aca
+    /*font-size: 40px;*/
+    padding: 20px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{/*Todo esto le pone estilo al H2, si se saca se ve feo*/
+    font-size: 1.5rem;
+    /*font-size: 2rem;*/
+    text-align: center;
+    padding-bottom: 5px;
+    margin: 1rem 1rem 0.5rem;
+    border-bottom: 1px solid rgb(84, 134, 221);/*Esto pone el renglon abajo del h2*/
+    font-weight: 300;/*Especifica el peso o grosor de la letra*/
+    text-transform: uppercase;
+}
+
+h3{
+    margin: 0.5rem 1rem 1rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: rgb(190,214,255);
+
+}
+/*
+nav{
+    display:;
+}*/
+
+nav > ul {
+    padding: 0;
+    /*margin-trim: 5px;*/
+    margin: 2rem auto 1rem;
+    /*margin-top: calc();*/
+}
+
+nav > ul > li{
+    display: inline-block;
+    background-color: rgb(10, 10, 81);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+}
+
+nav > ul > li:hover{
+    background-color: rgb(107, 107, 238);
+}
+
+nav > ul > li > a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+
+
+#Introduccion img, #Personajes img{
+    display: block;/*Esto me pega las imagenes y saca el espacio entre ellas, */
+    /*Si este espacio no esta, se va el espacio entre las imagenes*/
+    max-width: 672px;
+    width: 100%;
+    text-align: center;
+    /*max-width: 530px;*//*Esto lo puse yo*/
+}
+
+#Galeria img{
+    display: block;/*Esto me pega las imagenes y saca el espacio entre ellas, */
+    /*Si este espacio no esta, se va el espacio entre las imagenes*/
+    /*max-width: 672px;*/
+    width: 100%;
+    text-align: center;
+}
+.GaleriaGeneral{
+    font-size: 0;
+}
+
+section{
+    margin: 0.5rem 0;
+    padding: 0.5rem 0;
+    background-color: #01010B79;
+    border: thin solid transparent;/*Esto evita el colapso de margenes visto en la clase anterior*/
+    
+}
+
+.IntroduccionTexto, .rowText, .rowTextPersonajes, .textformulario{
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+/*
+.historiaTexto {
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+*/
+
+.IntroduccionImgTablet, .IntroduccionImgPC {
+    display:none;
+}
+/*
+.IntroduccionImgPC {
+    display:none;
+}*/
+
+/*Hasta que hicieron los ajustes de la primera seccion*/
+/*INICIO DE AJUSTE DE LA SEGUNDA SECCION*/
+
+.videoPrincipal{
+    text-align: center;
+    width:100%;
+}
+
+
+/*MOBILE*/
+
+
+footer {
+    background-color: black;
+    /*text-align: center;*/
+}
+
+footer img{
+    margin: auto;
+}
+
+@media screen and (max-width:672px){/*Esto se uso asi para evitar tener que sacarlo mas adelante, de lo contrario tenia que sacarlo en los medias restantes*/
+    /*AJUSTE CARACTERISTICAS PRINCIPALES*/
+    .claseCaracteristicas h3{
+        /*display: block;
+        margin:0;
+        border: thin solid transparent;*/
+        margin-top: 0;/*Esto me saca el renglon entre las cajas de las Caracteristicas del juego*/
+    }
+    .caracteristicaIndividual:nth-child(2n+1){
+        background-color: rgba(116, 106, 106, 0.5);
+        text-align: right;
+    }
+    .caracteristicaIndividual:nth-child(2n){
+        background-color: rgba(163, 153, 153, 0.5);
+    }
+    /*FIN AJUSTE CARACTERISTICAS PRINCIPALES*/
+    /*INICIO AJUSTE GALERIA*/
+    .claseGaleria{
+        /*display: block;/*Si se pone esto, la imagen se centra, con el inlineblock no se centra*/
+        border: 1px solid transparent;
+        /*border-radius: 50px;*/
+        /*max-width: 400px;*//*Al sacar esto, se borro la leyenda de cada clase*/
+        text-align: center;
+        margin: 1rem auto 1rem;
+        /*padding: 1rem;*/
+        color:black
+    }
+    /*
+    .claseGaleria img{
+        margin:1rem 0 0.5em;
+    }*/
+    /*FIN AJUSTE GALERIA*/
+
+    /*INICIO AJUSTE FORMULARIO*/
+    .premioSorteo{
+        max-width: 300px;
+        display: block;
+        text-align: center;
+        margin: 1rem auto 1rem;
+        /*border-bottom: thin double blue;*/
+    }
+   
+    .formulario{
+        padding: 0.5rem 1.5rem 0.5rem;
+    }
+
+    .boton{
+        padding: 0.5rem 2rem 0.5rem;
+        text-align: right;
+    }
+
+    .todoformulario{
+        background-color: gray;
+        border: 1px solid black;
+        margin: 1rem 1rem 1rem;
+    }
+    /*FIN AJUSTE FORMULARIO*/
+
+
+}
+
+
+
+/*FIN DE AJUSTE DE LA SEGUNDA SECCION*/
+/*INICIO DE AJUSTE DE LA TERCERA SECCION*/
+
+
+.clasePersonajes{
+    display: inline-block;
+    font-size: 1rem;
+    border-top: thin solid rgba(245, 245, 245, 0.712);
+    border-bottom: thin solid rgba(245, 245, 245, 0.712);
+    margin: 1rem 0;
+    background-color: rgba(5, 5, 22, 0.664);
+}
+
+.clasePersonajes h3 {
+    padding: 0.5rem 2rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+/**/
+
+#Personajes{
+    background-color: rgb(156, 44, 110);
+}
+
+.clasePersonajes p {
+    padding: 0.5rem;
+}
+
+.clasePersonajes .rowImg {
+    border-top: thin dotted rgba(245, 245, 245, 0.712);
+    border-bottom: thin double rgba(245, 245, 245, 0.712);
+}
+
+.clasePersonajes .rowImg > img {
+    max-width: 500px;/*Limita el crecimiento  */
+    margin:auto;
+}
+
+.clasePersonajes .rowPersonaje {
+    padding: 1rem 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    color: rgb(192, 213, 249);
+    background-color: rgba(145, 9, 138, 0.836);
+}
+
+.clasePersonajes .rowLink{
+    padding: 0 0.5rem 1rem;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+.GaleriaGeneral {
+    padding: 10px;
+}
+
+.GaleriaGeneral img {
+    /*margin-bottom: 10px;*/
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba (65, 65, 65, 0.274);
+    width: 100%;
+}
+
+.claseGaleria div {
+    margin-bottom: 10px;
+    padding: 0 10px 10px;
+    background-color: white;
+    box-shadow: 1px 1px 3px rgba (65, 65, 65, 0.274);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/*Esto corrije la galeria del mobile*/
+.GaleriaGeneral div caption {
+    border: 10px solid black;
+    padding: 150px;
+    
+    
+}
+/*
+caption {
+    background-color: yellow;
+}
+*/
+
+/*TABLET*/
+
+@media screen and (min-width:672px) and (max-width:993px){
+    body {
+        /*background-color: red;*/
+        /*background-size:cover;*/
+        /*background-repeat: no-repeat;*/
+        /*background-position:50% 50%;*/
+        background-size: auto;
+        background-attachment:fixed;
+    }
+
+    .IntroduccionImgMobile {
+        display:none;
+    }
+/*
+    .IntroduccionImgTablet{
+        outline: red;
+    }*/
+    
+    .IntroduccionImgTablet img{
+        /*max-width: 400px;*/
+        width: 100%;
+        border: 2px solid transparent;
+        margin:auto;
+    }
+    
+
+    .IntroduccionImgPC {
+        display:none; 
+    }
+
+    
+    /*ARREGLANDO SECCION 1*/
+    /*
+    .IntroduccionImgTablet img{
+        margin: auto;
+        text-align: center;
+    }*/
+
+    .imagenMasTexto {
+        margin: 0 1rem 0.5rem 2rem;
+    }
+
+    .imagenMasTexto div {
+        display: inline-block;
+        font-size: 0;
+        border: 0px solid transparent;
+        width: 49%;
+        vertical-align: top;
+        
+    }
+
+    .IntroduccionTexto p{
+        font-size: 1rem;
+        border: 2px solid transparent;
+    }
+
+    /*ARREGLANDO SECCION 2*/
+
+    /*ARREGLANDO SECCION 3*/
+    .clasePersonajes{
+        width: calc(50% - 1rem);
+        vertical-align: top;
+        /*margin-right: 2rem;*/
+    }
+
+    .clasePersonajes h3{
+        height: 60px;
+        text-align: auto;
+        /*margin: auto;*/
+        margin: auto;
+        font-size: 1.4rem;/*Esto soluciono muchas cosas pero no se bien que hace*/
+    }
+
+
+    .rowPersonaje{
+        color: black;
+        font-size: 1rem;
+        /*margin: 5rem 0 5rem;*/
+        height: 80px; /*Esto hace que el texto que esta en la caja esten todos iguales*/
+        margin: auto;/*Con esto intenta tomar todo el ancho de la pagina*/
+    }
+
+    .clasePersonajes p {
+        padding: 0.5rem;
+        
+        font-size: 1rem;
+        min-height: 400px;
+    }
+
+    .clasePersonajes:nth-child(2n-1){
+        /*background-color: aqua;*/
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    
+    /*FIN ARREGLANDO SECCION 3*/
+    /*Ajustando Galeria*/
+
+    .GaleriaGeneral{
+        font-size: 0;
+        padding: 20px;
+    }
+
+  
+
+    .GaleriaGeneral div {
+        /*font-size: 0;*/
+        display: inline-block;
+        /*background-color: black;*/
+        width: 50%;
+    }
+    .claseGaleria{
+        font-size: 0;
+    }
+    
+    .claseGaleria div {
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        color: black;
+    }
+    /*FIN AJUSTE GALERIA*/
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PC*/
+@media screen and (min-width:993px) and (max-width:1680px) {
+    body {
+        background-color: yellow;
+        background-size:cover;
+        /*background-repeat: no-repeat;*/
+        /*background-position:50% 50%;*/
+        background-position: center;
+        background-attachment:fixed;
+    }
+
+    .IntroduccionImgMobile {
+        display:none;
+    }
+
+    .IntroduccionImgTablet {
+        display:none;
+    }
+    
+    .IntroduccionImgPC {
+        display:block; 
+    }
+
+
+    /*ARREGLANDO SECCION 3*/
+    .clasePersonajes{
+        width: calc(33.3% - 1rem);
+        vertical-align: top;
+        /*margin-right: 2rem;*/
+
+    }
+    .rowPersonaje{
+        color: red;
+        /*margin: 5rem 0 5rem;*/
+    }
+
+    .clasePersonajes p {
+        padding: 0.5rem;
+        font-size: 1rem;
+        min-height: 350px;
+    }
+
+    .clasePersonajes:nth-child(3n+1){
+        background-color: aqua;
+        /*margin-right: 0.5rem;*/
+        margin-left: 0.5rem;
+    }
+
+    .clasePersonajes:nth-child(3n+2){
+        background-color: yellow;
+        /*margin-right: 0.5rem;*/
+        margin-left: 0.5rem;
+    }
+
+    .clasePersonajes:nth-child(3n+3){
+        background-color: red;
+        /*margin-right: 0.5rem;*/
+        margin-left: 0.5rem;
+    }
+
+    /*FIN ARREGLANDO 3*/
+
+}
+
+
+.fotopersonal{
+    max-width: 200px;
+}
+.fotopersonal img{
+    display: block;
+    margin: auto;
+}

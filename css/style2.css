@@ -1,0 +1,336 @@
+*{
+    box-sizing: border-box;
+}
+
+.bg-miGray{
+    background-color: rgb(48, 40, 40);    
+}
+/*
+.claseImagen{
+    width: 100%;
+}*/
+
+/*
+.claseImagen{
+    width: 100%;
+    border: 1px solid black;
+}*/
+
+.bg-pink{
+    background-color: pink;
+}
+
+.bg-peach{
+    background-color: peachpuff;
+}
+
+.bg-lime{
+    background-color: rgb(203, 244, 203);
+}
+
+.bg-lavender{
+    background-color: #f4bfff;
+}
+
+.bg-mint{
+    background-color: #aaf0d1;
+}
+
+.bg-canary{
+    background-color: #fdfd96;
+}
+
+.btn-mint{
+    background-color: #aaf0d1;
+}
+
+.btn-blue{
+    background-color: blue;
+}
+
+body{
+    background-color: blue;
+}
+
+.btn-ac{
+    background-color: #084D8B;
+    color: whitesmoke;
+    border: 1px solid black ;
+}
+
+.btn-ac:hover{
+    background-color: #007aff;
+    color: whitesmoke;
+    border: 1px solid black;
+}
+
+/*INICIO Ajuste Navbar*/
+/* INICIO Esto me posiciona el menu hamburguesa a la izquierda*/
+@media screen and (width<=768px) {
+    #botones{
+        display: flex;
+        justify-content: end;
+        /* background-color: red; */
+    }
+}
+
+@media screen and (width>=768px) {
+    #botones{
+        display: flex;
+        justify-content: end;
+        /* background-color: red; */
+        
+    }
+}
+/* FIN Esto me posiciona el menu hamburguesa a la izquierda*/
+
+.margenNavbar{
+    padding-top: 48px;
+}
+/*Fin Ajuste Navbar*/
+
+
+/*INICIO Ajuste Quienes Somos*/
+@media screen and (width<=576px) {
+    #quienesSomos1{
+        display: none;
+    }
+    
+}
+@media screen and (width>576px) {
+    #quienesSomos2{
+        display: none;
+    }
+}
+
+
+/*FIN Ajuste Quienes somos*/
+
+
+/*INICIO Ajustes imagenes carrusel*/
+
+
+.im-slide1{
+    background-image: url('../imagenes/banners/ver1.jpg');  
+    border: 1px solid black; 
+}
+.im-slide2{
+    background-image: url('../imagenes/banners/semanaDulzura.jpg');
+    border: 1px solid black; 
+}
+.im-slide3{
+    background-image: url('../imagenes/banners/ver3.jpg');
+    border: 1px solid black; 
+}
+
+
+.carousel-banner{
+    /* height: 100px; */
+    aspect-ratio: 2/1;
+    /*INICIO AJUSTE IMAGEN BACK*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*FIN AJUSTE IMAGEN BACK*/
+    /*INICIO DE AJUSTE DEL DIV DE FONDO*/
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*INICIO AJUSTE DEL DIV DE FONDO*/
+
+}
+
+.carousel-banner>div{
+    color: yellow;
+    font-size: 1.4em;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    text-transform: uppercase;
+    
+    /* display: none; */
+}
+
+.carousel-banner>div>img{
+    max-width: 30%;
+    filter: drop-shadow(2px 2px 5px black);/*Ver que hace esto?*/
+    /*display:none;*/
+}
+
+/*
+@media screen and (width >= 992px) {
+    .carousel-banner{
+        /* justify-content: flex-start;
+        align-items: flex-start; 
+        padding: 30px;        
+    }
+    
+    .carousel-banner>div{
+        max-width: 250px;
+        color: black;
+        text-align: start;
+    }
+
+    .carousel-banner>img{
+        max-width: 20%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 30px;
+        display: none;
+    }
+}*/
+
+
+@media screen and (width >= 992px) {/*1100*/
+    .carousel-banner{
+        /*justify-content: flex-start;*/
+        flex-direction: row;
+        align-items: flex-start;
+        /* AL hacer esto me permite alinear los divs y separar la imagen del texto */
+        justify-content: space-between;
+        /*align-items: top;*/
+        padding: 30px;   
+             
+    }
+
+    #exclusivo{/*Esto solo ajusta el texto del slide 3 para centrarlo*/
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carousel-banner>div{
+        font-size: 2em;
+        max-width: 250px;
+        color: black;
+        text-align: start;
+        /**/
+        /**/
+        
+    }
+
+    .carousel-banner>div>img{
+        max-width: 100%;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 30px; 
+    }
+}
+
+
+
+/*FIN AJUSTES IMAGENES CAROUSEL */
+
+
+
+
+
+/*Incio SeudoElementos*/
+.bg-colorNuevo{
+    background-color: rgb(192, 189, 189);
+    
+}
+
+@media screen and (992px<=width<1200px) {
+    .bg-colorNuevo:nth-child(2n+1){
+        background-color: rgba(20, 20, 18, 0.774);
+        color: white;
+    }
+}
+
+@media screen and (width>=1200px) {
+    /* .bg-colorNuevo:nth-child(2n){
+        background-color: rgb(196, 35, 35);
+    } */
+    .bg-colorNuevo:nth-child(5n+2){
+        background-color: rgba(20, 20, 18, 0.774);
+        color: white;
+    }
+    .bg-colorNuevo:nth-child(5n+4){
+        
+        background-color: rgba(20, 20, 18, 0.774);
+        color: white;
+    }
+    .bg-colorNuevo:nth-child(10){
+        background-color: rgba(20, 20, 18, 0.774);
+        color: white;
+    }
+}
+
+
+
+/*
+.tiendaCelular{
+    background-color: green
+}*/
+
+
+
+/*FIN seudoElementos*/
+
+
+
+
+
+
+
+
+
+
+/*INICIO AJUSTES GRILLA CSS*/
+
+@media screen and (width <= 700px){
+    #cambio2{
+        display: none;
+        /* outline: 5px solid black; */
+    }
+}
+@media screen and (width > 700px){
+    #cambio1{
+        display: none;
+    }
+}
+
+/*Ajustes del boton enviar*/
+
+@media screen and (width <= 576px){
+    .btn-size{
+        width: 100%; 
+    }
+}
+@media screen and (576px < width <= 992px){
+    .btn-size{
+        width: 50%; 
+    }
+}
+@media screen and (width >= 992px){
+    .btn-size{
+        width: 25%; 
+    }
+}
+
+/*Ajuste Boton*/
+@media screen and (width >= 992px){
+    .prueba{
+        display: inline-flex; 
+        color: red;
+        justify-content: space-between;
+    }
+}
+
+.bg-salmon{
+    /* background-color: rgb(11, 68, 63); */
+    background-color: rgb(181, 184, 175);
+}
+
+.btn-salmon{
+    background-color: #084D8B;
+}
+.btn-salmon:hover{
+    background-color: #051538;
+}
+
+
+
+
+
+/*FIN GRILLA CSS*/
