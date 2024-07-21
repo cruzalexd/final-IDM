@@ -334,3 +334,73 @@ body{
 
 
 /*FIN GRILLA CSS*/
+
+.miGaleria{
+    background-color: rgb(0, 0, 0);
+    margin-bottom:0;
+    color: white
+}
+
+.container2 {
+    /*  width: 1440px; */
+    background-color: rgba(0, 0, 0, 0.829);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    gap: 10px;
+}
+
+.container2 div {
+    /* border: 1 px solid black; */
+    outline: 1px solid rgb(255, 255, 255);
+    /*Lo que esta a continuacion me centra la foto*/
+    background-color: rgb(19, 129, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and ( 1200px<= width <=1440px) {
+    .container2 {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and ( 992px<= width <1200px) {
+    .container2 {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and ( 768px<= width <992px) {
+    .container2 {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+@media screen and ( 576px<= width <768px) {
+    .container2 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media screen and ( 500px<= width <576px) {
+    .container2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media screen and ( width <=500px) {
+    .container2 {
+        grid-template-columns: repeat(1, 1fr);
+       /*  grid-template-rows: repeat(12, 1fr); */
+    }
+}
+
+/*FIN PARA GALERIA*/
+
